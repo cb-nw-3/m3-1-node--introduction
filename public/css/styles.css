@@ -62,3 +62,7 @@ ol, ul { margin-bottom: 1em; }
   padding: 0 20px;
   margin: 20px 0;
 }
+
+.link-list > li {
+  padding: 1%;
+}

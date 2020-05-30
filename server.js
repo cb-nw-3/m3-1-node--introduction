@@ -34,10 +34,11 @@ express()
     .get('/question8', q8)
     .get('/question9', q9)
     .get('/question10', q10)
+    // .get('/homepage')
     
     // this serves up the homepage
-    .get('/', (req, res) => {
-        res.send('This is the homepage... it\'s empty :(');
+    .get('/homepage', (req, res) => {
+        res.render('pages/homepage');
     })
 
     // this is our catch all endpoint. If a user navigates to any endpoint that is not
