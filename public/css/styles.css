@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-  
+
 header {
     flex: 0 0 60px;
     display: flex;
@@ -16,7 +16,7 @@ header {
     border-bottom: 1px solid #808080;
     padding: 0 24px;
 }
-  
+
 .main {
     flex: 1 0 auto;
     padding: 24px;
@@ -66,7 +66,35 @@ h2{
     text-align: center;
 }
 
-/* not found page */
+/* start homepage */
+.homepage .main{
+    display: grid;
+}
+
+.homepage .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.homepage button{
+    border: 2px double black;
+    background: #68A063;
+}
+
+.homepage button:hover{
+    background: #3C873A;
+}
+
+.homepage a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+/* end homepage */
+
+/* start not found page */
 .not-found {
     display: flex;
     flex-direction: column;
@@ -111,3 +139,4 @@ h2{
     color: white;
     text-decoration: none;
 }
+/* end not found page */
