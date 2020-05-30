@@ -35,3 +35,21 @@ _Let's create a server right now!_
 Let's explore the workshop repository together.
 
 ---
+
+EJS
+
+let template = `
+<ol>
+    <% friends.forEach((name)=>){%>
+        <li><%name %><li> 
+    <%{} ); %>
+
+    }>
+</ol>
+` ;
+
+let data = {
+    friends = ['a','b','c']
+}
+
+ejs.render(template,data)
