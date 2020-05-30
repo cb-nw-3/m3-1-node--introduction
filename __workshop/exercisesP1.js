@@ -15,7 +15,7 @@ const q2 = (req, res) => {
   // pass this variable to the ejs file and render it in the answer box.
   const sentence = '<p>This is the way.</p>';
 
-  res.render('pages/question2', {});
+  res.render('pages/question2', {sentence: sentence});
 };
 // -----------------------------------------------
 
@@ -33,7 +33,7 @@ const q3 = (req, res) => {
     favoriteBeverage: 'Duff Beer',
   };
 
-  res.render('pages/question3');
+  res.render('pages/question3',{homer: homer});
 };
 // -----------------------------------------------
 
@@ -42,7 +42,11 @@ const q3 = (req, res) => {
 const q4 = (req, res) => {
   const popularGirlNames = ['Olivia', 'Ruby', 'Emily', 'Grace', 'Jessica'];
 
-  res.render('pages/question4');
+  //you can also create another var that holds the top 3 girls, and call that
+  //template
+
+  //you can treat the popularGirlNames as a template
+  res.render('pages/question4',{popularGirlNames: popularGirlNames.slice(0,3)});
 };
 // -----------------------------------------------
 
@@ -51,7 +55,7 @@ const q4 = (req, res) => {
 const q5 = (req, res) => {
   const popularGirlNames = ['Olivia', 'Ruby', 'Emily', 'Grace', 'Jessica'];
 
-  res.render('pages/question5');
+  res.render('pages/question5',{popularGirlNames: popularGirlNames});
 };
 // -----------------------------------------------
 
