@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+<%- include('../partials/header') %>
+
 <body>
   <header>
     <h1>Node: Workshop 1</h1>
@@ -13,7 +10,11 @@
       <%- include('../partials/questions/4') %>
       <div class="box answer">
         <h3>Answer</h3>
-        <!-- render answer here -->
+        <ul>
+          <% topThreeNames.forEach(element => { %>
+          <li><%= element %></li>
+          <% }) %>
+        </ul>
       </div>
     </div>
   </div>
