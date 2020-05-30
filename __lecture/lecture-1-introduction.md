@@ -32,9 +32,17 @@ We'll be using it as a _backend server_.
 
 What are some other languages/frameworks that can be used instead?
 
+- python
+- ruby
+- php
+
 ---
 
 ### Why Node?
+
+- know another langage than JS
+- you have sigle unified language that works in both
+- Node backend, but can code front end too
 
 ---
 
@@ -52,8 +60,8 @@ When you _execute_ a binary, it creates something called a **process**.
 
 There are two ways of executing a binary.
 
-- double-clicking its icon
-- typing its binary name in the terminal
+- double-clicking its icon (open it as application)
+- typing its binary name in the terminal (node (space) in terminal of VisualStudio)
 
 ---
 
@@ -61,11 +69,13 @@ A binary is like an architectural plan, and a process is like a building.
 
 Many buildings can be built from the same plan.
 
+Only have one Node binary, but can run it many times.
+
 ---
 
 ### Notable Binaries
 
-- NodeJs (used to interpret JS code)
+- NodeJs (used to interpret JS code, a thing can run JS with)
 - `yarn` (used to import modules written by others)
 
 ---
@@ -91,6 +101,8 @@ npm is a tool that lets you download code written by others.
 
 This can save you a substantial amount of time. You don't _always_ have to reinvent the wheel.
 
+NodePackagesManager
+
 ---
 
 In this course, we will be using `yarn` to install npm packages.
@@ -104,6 +116,8 @@ In this course, we will be using `yarn` to install npm packages.
 This file is created by `npm`. There is _one_ file per project.
 
 It contains all the names of all the modules needed for the project.
+
+why a lot of modual, because dependancy of other modual.
 
 ---
 
@@ -127,6 +141,9 @@ A module, or library, is a set of files, usually written by someone else.
 - These reside inside of the `node_modules` folder.
 - You can import node modules the `yarn` command.
 
+* framework is a type of modual
+* only single module.exports (Alway "modual. in front on "exports)
+
 ```
 // example (this will add the 'moment' module)
 yarn add moment
@@ -135,6 +152,8 @@ yarn add moment
 This will add a module to the node_modules folder as well as update the `package.json` file.
 
 ---
+
+fiel .gitignore in visual studip : don't want git to track
 
 To install all of a project's dependencies, you type `yarn install`.
 
@@ -147,7 +166,7 @@ All of the dependencies listed in the packages.json will be installed.
 To use a module, you import it with `require`:
 
 ```js
-const multiply = require('multiply');
+const multiply = require("multiply");
 
 multiply(3, 6);
 ```
