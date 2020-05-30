@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+<%- include('../partials/questions/head.ejs') %>
 <body>
-  <header>
-    <h1>Node: Workshop 1</h1>
-  </header>
+  <%- include('../partials/questions/header.ejs') %>
   <div class="main">
     <h2>Part 1</h2>
     <div class="content">
@@ -14,7 +8,21 @@
       <div class="box answer">
         <h3>Answer</h3>
         <!-- render answer here -->
+        <h4>Top Girls' Names</h4>
+        <ol>
+          <li>1. <%= threeFirst[0] %></li>
+          <li>2. <%= threeFirst[1] %></li>
+          <li>3. <%= threeFirst[2] %></li>
+        </ol>
       </div>
+    </div>
+    <div class="nav-bar">
+      <button onclick="location.href='/question3';">
+        Previous Exercise
+      </button>
+      <button onclick="location.href='/question5';">
+        Next Exercise
+      </button>
     </div>
   </div>
 </body>
