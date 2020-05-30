@@ -9,6 +9,9 @@ const exercisesP1 = require('./__workshop/exercisesP1');
 
 const PORT = 8000;
 
+// create a const homepage to link to the .get in line 30
+const homepage = (req, res) => res.render('pages/homepage');
+const four0hFour = (req, res) => res.render('pages/four0hFour');
 const q6 = (req, res) => res.render('pages/question6');
 const q7 = (req, res) => res.render('pages/question7');
 const q8 = (req, res) => res.render('pages/question8');
@@ -24,6 +27,8 @@ express()
     .set('view engine', 'ejs')
 
     // endpoints
+    // single '/' will redirect to the localhost:8000 which is the homepage
+    .get('/', homepage)
     .get('/question1', exercisesP1.q1)
     .get('/question2', exercisesP1.q2)
     .get('/question3', exercisesP1.q3)
@@ -34,11 +39,12 @@ express()
     .get('/question8', q8)
     .get('/question9', q9)
     .get('/question10', q10)
-    
+    // put the 404 at the end or else it will always go to the 404 page before the other ones
+    .get('*', four0hFour)
     // this serves up the homepage
-    .get('/', (req, res) => {
-        res.send('This is the homepage... it\'s empty :(');
-    })
+    // .get('/', (req, res) => {
+    //     res.send('This is the homepage... it\'s empty :(');
+    // })
 
     // this is our catch all endpoint. If a user navigates to any endpoint that is not
     // defined above, they get to see our 404 page.
