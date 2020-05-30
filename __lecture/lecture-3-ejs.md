@@ -13,7 +13,7 @@ EJS is a **templating language**
 EJS is:
 
 - Superset of HTML
-- alloys you to "mix" JS to create dynamic HTML
+- allows you to "mix" JS to create dynamic HTML
 
 ---
 
