@@ -42,7 +42,7 @@ express()
 
   // this is our catch all endpoint. If a user navigates to any endpoint that is not
   // defined above, they get to see our 404 page.
-  .get("*", (req, res) => {
+  .get("/fourOhfour", (req, res) => {
     res.status(404);
     res.send("404... This is not the page you are looking for.");
   })
