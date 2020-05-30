@@ -1,0 +1,21 @@
+<%- include('./partials/header') %>
+
+<body>
+
+    <h1>Node Workshop 1</h1>
+
+    <% let numQuestions = 10; %>
+
+    <ul>
+
+        <% for (let i = 1; i <= numQuestions; i++) { %>
+
+        <li><a href="question<%= i %>">Question <%= i %></a></li>
+
+        <% } %>
+
+    </ul>
+
+</body>
+
+</html>

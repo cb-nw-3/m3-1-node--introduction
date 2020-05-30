@@ -1,21 +1,14 @@
-<%- include('../partials/header') %>
+<% let pageNum = 4; %>
+<%- include('../partials/header', {pageNum: pageNum}) %>
 
-<body>
-  <header>
-    <h1>Node: Workshop 1</h1>
-  </header>
-  <div class="main">
-    <h2>Part 1</h2>
-    <div class="content">
-      <%- include('../partials/questions/4') %>
-      <div class="box answer">
-        <h3>Answer</h3>
-        <ul>
-          <% topThreeNames.forEach(element => { %>
-          <li><%= element %></li>
-          <% }) %>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="box answer">
+  <h3>Answer</h3>
+  <ul>
+    <% topThreeNames.forEach(element => { %>
+    <li><%= element %></li>
+    <% }) %>
+  </ul>
+</div>
+</div>
+</div>
 </body>

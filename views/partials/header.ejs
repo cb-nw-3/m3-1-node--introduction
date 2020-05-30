@@ -4,3 +4,17 @@
     <title>Node: Workshop 1</title>
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
+
+
+<body>
+
+    <%- include('../partials/pageHeader') %>
+    <div class="main">
+        <% if (pageNum <= 5) { %>
+        <h2>Part 1</h2>
+        <% } else { %>
+        <h2>Part 2</h2>
+        <% } %>
+        <%- include('../partials/pageNav', {pageNum: pageNum}) %>
+        <div class="content">
+            <%- include('../partials/questions/'+ pageNum) %>
