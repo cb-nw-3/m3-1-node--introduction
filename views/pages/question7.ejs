@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+<%- include('../partials/questions/head.ejs') %>
 <body>
-  <header>
-    <h1>Node: Workshop 1</h1>
-  </header>
+  <%- include('../partials/questions/header.ejs') %>
   <div class="main">
     <h2>Part 2</h2>
     <div class="content">
@@ -16,6 +10,14 @@
         <!-- render answer here -->
         <p>No answer required here...</p>
       </div>
+    </div>
+    <div class="nav-bar">
+      <button onclick="location.href='/question6';">
+        Previous Exercise
+      </button>
+      <button onclick="location.href='/question8';">
+        Next Exercise
+      </button>
     </div>
   </div>
 </body>
