@@ -8,6 +8,11 @@
     <h1>Node: Workshop 1</h1>
   </header>
   <div class="main">
+    <nav>
+      <a href='/question1'>Previous</a>
+      <a href='/'>Home</a>
+      <a href='/question3'>Next</a>
+    </nav>
     <h2>Part 1</h2>
     <div class="content">
       <%- include('../partials/questions/2') %>
@@ -16,8 +21,14 @@
         <!-- render answer here -->
         <!-- Notice that the commenting inside the ejs brackets is JS. -->
 
-        <p><%- // sentence %></p>
-        <p><%= // sentence %></p>
+        <!-- no output -->
+        <p><% sentence %></p>
+        <!-- Unescaped ouput - HTML style -->
+        <p><%- sentence %></p>
+        <!-- Escaped ouput - display tags - unction configurable -->
+        <p><%= sentence %></p>
+        <!-- Comment tag -->
+        <p><%# sentence %></p>
 
         <!-- Keep that in mind for later. Everything between those brackets IS JavaScript. -->
       </div>
