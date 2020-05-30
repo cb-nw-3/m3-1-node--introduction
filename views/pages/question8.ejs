@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+<%- include('../partials/questions/htmlHeaders', {}) %>
 <body>
-  <header>
-    <h1>Node: Workshop 1</h1>
-  </header>
+  <%- include('../partials/questions/onlyHeader', {}) %>
   <div class="main">
     <h2>Part 2</h2>
     <div class="content">
@@ -17,5 +11,9 @@
         <p>No answer required here...</p>
       </div>
     </div>
+  </div>
+  <div>
+    <a href="http://localhost:8000/question7">PREVIOUS PAGE</a>
+    <a href="http://localhost:8000/question9">NEXT PAGE</a>
   </div>
 </body>
