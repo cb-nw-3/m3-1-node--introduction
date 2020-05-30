@@ -8,13 +8,25 @@
     <h1>Node: Workshop 1</h1>
   </header>
   <div class="main">
+    <nav>
+      <a href='/question2'>Previous</a>
+      <a href='/'>Home</a>
+      <a href='/question4'>Next</a>
+    </nav>
     <h2>Part 1</h2>
     <div class="content">
       <%- include('../partials/questions/3') %>
-      <div class="box answer">
+      <div class="box answer" style="display:flex;">
         <h3>Answer</h3>
         <!-- render answer here -->
+        <img src="<%= homer.imageUrl %>" alt="<%= homer.name %>"></img>
+        <div class="home-data">
+          <p>Name: <%= homer.name %></p>
+          <p>DOB: <%= homer.dob %></p>
+          <p>Profession: <%= homer.profession %></p>
+          <p>Favorite Food: <%= homer.favoriteFood %></p>
+          <p>Favorite Beverage: <%= homer.favoriteBeverage %></p>
+        </div>
       </div>
     </div>
-  </div>
 </body>
