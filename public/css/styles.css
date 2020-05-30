@@ -66,3 +66,10 @@ ol, ul { margin-bottom: 1em; }
 .link-list > li {
   padding: 1%;
 }
+
+.error {
+  text-align: center;
+  font-size: 4rem;
+  width: 40%;
+  margin: 0 auto;
+}
