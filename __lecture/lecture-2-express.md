@@ -1,6 +1,6 @@
 # 3.1.2 - Module Spotlight: Express
 
-<img src={express} style="min-width: 50%;" />
+<img src="assets/express.png" style="min-width: 50%;" />
 
 ---
 
