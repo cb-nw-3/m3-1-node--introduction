@@ -42,7 +42,11 @@ const q3 = (req, res) => {
 const q4 = (req, res) => {
   const popularGirlNames = ['Olivia', 'Ruby', 'Emily', 'Grace', 'Jessica'];
 
-  res.render('pages/question4');
+  //you can also create another var that holds the top 3 girls, and call that
+  //template
+
+  //you can treat the popularGirlNames as a template
+  res.render('pages/question4',{popularGirlNames: popularGirlNames.slice(0,3)});
 };
 // -----------------------------------------------
 
