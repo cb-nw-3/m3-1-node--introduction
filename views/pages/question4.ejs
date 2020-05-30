@@ -14,6 +14,11 @@
       <div class="box answer">
         <h3>Answer</h3>
         <!-- render answer here -->
+        <ul>
+          <% popularGirlNames.forEach((name, index) => { if(index < 3) { %>
+          <li><%- index + 1 + '. ' %><%- name %></li>
+          <% }}); %>
+        </ul>
       </div>
     </div>
   </div>
