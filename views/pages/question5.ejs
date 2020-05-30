@@ -12,8 +12,13 @@
     <div class="content">
       <%- include('../partials/questions/5') %>
       <div class="box answer">
-        <h3>Answer</h3>
+        <h3>Top 5 girls names in the England and Wales</h3>
         <!-- render answer here -->
+        <ol>
+          <% popularGirlNames.forEach(function(name, position) { %>
+          <li><%= position + 1 %>. <%= name %></li>
+          <% }); %>
+        </ol>
       </div>
     </div>
   </div>
