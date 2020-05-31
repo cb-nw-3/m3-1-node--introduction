@@ -13,6 +13,13 @@
       <%- include('../partials/questions/3') %>
       <div class="box answer">
         <h3>Answer</h3>
+        <p><%- JSON.stringify(homer) %> </p>
+        <p>Name: <%- homer.name%></p>
+        <p>Date Of Birth: <%- homer.dob %></p>
+        <p>Profession: <%- homer.profession %></p>
+        <p>Favorite Food: <%- homer.favoriteFood %></p>
+        <p>Favorite Beverage: <%- homer.favoriteBeverage %></p>
+        <p>Picture : <img src="<%= homer.imageUrl %>"></p>
         <!-- render answer here -->
       </div>
     </div>

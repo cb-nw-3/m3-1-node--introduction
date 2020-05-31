@@ -14,6 +14,11 @@
       <div class="box answer">
         <h3>Answer</h3>
         <!-- render answer here -->
+        <ul>
+          <% for (let index = 0; index < 3; index++) { %>
+            <li><%- popularGirlNames[index]; %></li>
+          <% } %>
+        </ul>
       </div>
     </div>
   </div>
