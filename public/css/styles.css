@@ -23,6 +23,10 @@ header {
   padding: 24px;
 }
 
+h1.huge {
+  font-size: 30rem;
+}
+
 ol,
 ul {
   margin-bottom: 1em;
@@ -55,6 +59,14 @@ a.links {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 10px;
   row-gap: 10px;
+}
+
+.container-404 {
+  background-color: #707070;
+  min-height: 100vh;
+  min-width: 100vw;
+  text-align: center;
+  color: #fff;
 }
 
 .content {
