@@ -14,7 +14,16 @@
       <div class="box answer">
         <h3>Answer</h3>
         <!-- render answer here -->
+        <ol>
+          <% popularGirlNames.forEach((name, index) => { %>
+          <li><%- index + 1 + '. ' %><%- name %></li>
+          <% }); %>
+        </ol>
       </div>
     </div>
+    <ul>
+      <a class="links" href="/question4">Previous</a>
+      <a class="links" href="/question6">Next</a>
+    </ul>
   </div>
 </body>
