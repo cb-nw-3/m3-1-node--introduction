@@ -1,0 +1,15 @@
+<div style="text-align: center;">
+  <% if (previous !== -1) { %>
+  <a
+    href="<%- 'http://localhost:8000/question' + previous %>"
+    style="margin-right: 5px; border: 1px solid black;"
+    >&lt;&lt; Previous</a
+  >
+  <% } %> <% if (next !== 11) { %>
+  <a
+    href="<%- 'http://localhost:8000/question' + next %>"
+    style="border: 1px solid black;"
+    >Next &gt;&gt;</a
+  >
+  <% } %>
+</div>

@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+<%- include('../partials/questions/head') %>
 <body>
   <header>
     <h1>Node: Workshop 1</h1>
@@ -14,8 +10,9 @@
       <div class="box answer">
         <h3>Answer</h3>
         <!-- render answer here -->
-        sdsdadadadsads
+        sdsdadadadsads SOMETHING
       </div>
     </div>
+    <%- include('../partials/questions/navigation', {previous: -1, next: 2}) %>
   </div>
 </body>
