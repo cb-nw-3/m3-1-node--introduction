@@ -41,8 +41,9 @@ const q3 = (req, res) => {
 // -----------------------------------------------
 const q4 = (req, res) => {
   const popularGirlNames = ["Olivia", "Ruby", "Emily", "Grace", "Jessica"];
+  const topThree = popularGirlNames.slice(0, 3);
 
-  res.render("pages/question4");
+  res.render("pages/question4", { topThree });
 };
 // -----------------------------------------------
 
@@ -50,9 +51,7 @@ const q4 = (req, res) => {
 // -----------------------------------------------
 const q5 = (req, res) => {
   const popularGirlNames = ["Olivia", "Ruby", "Emily", "Grace", "Jessica"];
-  const topThree = popularGirlNames.slice(0, 3);
-  console.log(topThree);
-  res.render("pages/question5", { topThree });
+  res.render("pages/question5", { popularGirlNames });
 };
 // -----------------------------------------------
 
