@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+<%- include('../partials/questions/head') %>
 <body>
   <header>
     <h1>Node: Workshop 1</h1>
@@ -14,7 +10,13 @@
       <div class="box answer">
         <h3>Answer</h3>
         <!-- render answer here -->
+        <ol style="list-style: decimal; margin-left: 15px;">
+          <% for (let name of girlNames) { %>
+          <li><%- name %></li>
+          <% } %>
+        </ol>
       </div>
     </div>
+    <%- include('../partials/questions/navigation', {previous: 4, next: 6}) %>
   </div>
 </body>

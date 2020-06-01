@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+<%- include('../partials/questions/head') %>
 <body>
   <header>
     <h1>Node: Workshop 1</h1>
@@ -13,8 +9,14 @@
       <%- include('../partials/questions/3') %>
       <div class="box answer">
         <h3>Answer</h3>
-        <!-- render answer here -->
+        <img src="<%- data.imageUrl %>" alt="home photo" />
+        <p>Name: <%- data.name %></p>
+        <p>Date of Birth: <%- data.dob %></p>
+        <p>Profession: <%- data.profession %></p>
+        <p>Favorite Food: <%- data.favoriteFood %></p>
+        <p>Favorite Beverage: <%- data.favoriteBeverage %></p>
       </div>
     </div>
+    <%- include('../partials/questions/navigation', {previous: 2, next: 4}) %>
   </div>
 </body>
