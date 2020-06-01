@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+<%- include('../partials/head') %>
+
 <body>
   <header>
     <h1>Node: Workshop 1</h1>
@@ -14,7 +11,12 @@
       <div class="box answer">
         <h3>Answer</h3>
         <!-- render answer here -->
+        <p>1. <%- popularGirlNames[0] %></p>
+        <p>2. <%- popularGirlNames[1] %></p>
+        <p>3. <%- popularGirlNames[2] %></p>
       </div>
     </div>
+    <a href='/question3'>Previous</a>
+    <a href='/question5'>Next</a>
   </div>
 </body>
