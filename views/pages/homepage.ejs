@@ -1,0 +1,12 @@
+<%- include('../partials/questions/head') %>
+<body>
+    <%- include('../partials/questions/header') %>
+    <div class = 'homePageMain'>
+        <h3>Questions for this workshop:</h3>
+        <div class = 'lessonPlan'>
+        <% for (x=1; x <= 10; x++){ %>
+            <a href = '/question<%=x%>'>Question <%=x%></a>
+        <% } %>
+        </div>
+    </div>
+</body>

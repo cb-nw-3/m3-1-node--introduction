@@ -32,4 +32,24 @@ _Let's create a server right now!_
 
 ---
 
-[Next lecture: EJS](../lecture-3-ejs)
+Let's explore the workshop repository together.
+
+---
+
+EJS
+
+let template = `
+<ol>
+    <% friends.forEach((name)=>){%>
+        <li><%name %><li> 
+    <%{} ); %>
+
+    }>
+</ol>
+` ;
+
+let data = {
+    friends = ['a','b','c']
+}
+
+ejs.render(template,data)
