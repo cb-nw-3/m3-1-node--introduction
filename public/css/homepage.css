@@ -1,0 +1,57 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #125223;
+    color: #73bf87;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 20px;
+}
+
+a {
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    transition: 0.25s;
+    font-size: 24px;
+}
+
+a:hover {
+    color: #125223;
+    background-color: white;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+img {
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid #73bf87;
+    border-radius: 4px;
+}
+
+#container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero {
+    padding-left: 40px;
+}
