@@ -1,0 +1,7 @@
+<% if (pageNum > 1) { %>
+<a href="/question<%= pageNum - 1 %>">Previous Question</a>
+<% } %>
+
+<% if (pageNum < 10) { %>
+<a href="/question<%= pageNum + 1 %>">Next Question</a>
+<% } %>

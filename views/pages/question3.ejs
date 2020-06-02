@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
-<body>
-  <header>
-    <h1>Node: Workshop 1</h1>
-  </header>
-  <div class="main">
-    <h2>Part 1</h2>
-    <div class="content">
-      <%- include('../partials/questions/3') %>
-      <div class="box answer">
-        <h3>Answer</h3>
-        <!-- render answer here -->
-      </div>
-    </div>
-  </div>
+<% let pageNum = 3; %>
+<%- include('../partials/header', {pageNum: pageNum}) %>
+
+<div class="box answer">
+  <h3>Answer</h3>
+  <img src="<%= homer.imageUrl %>" alt="Homer Simpson eating a doughnut">
+  <ul>
+    <li><%= homer.name %></li>
+    <li><%= homer.dob %></li>
+    <li><%= homer.profession %></li>
+    <li><%= homer.favoriteFood %></li>
+    <li><%= homer.favoriteBeverage %></li>
+  </ul>
+</div>
+</div>
+</div>
 </body>
