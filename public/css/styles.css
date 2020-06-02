@@ -51,3 +51,62 @@ ol, ul { margin-bottom: 1em; }
         min-height: 500px;
     }
 }
+
+.homePageMain{
+    height:100vh;
+    padding:30px 30px;
+    background-image: url('https://countrynavigator.com/wp-content/uploads/iStock-494617082.jpg');
+    background-size:cover;
+}
+
+.homePageMain > h3 {
+    color:white;
+}
+
+.lessonPlan {
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+    color:white;
+}
+
+.lessonPlan > a {
+    color:white;
+    margin:8px 10px;
+    cursor:pointer;
+}
+
+.fourOfourBackground{
+    background-image: url('https://savedelete.com/wp-content/uploads/2018/09/girl-working-on-computer-750x430.jpg');
+    background-size:cover;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.fourOfourBackground > .circle {
+    width:400px;
+    height:400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius:50%;
+    color:white;
+    position:relative;
+}
+
+.circle > .paragraph{
+    width:70%;
+    position:absolute;
+    top:90px;
+    left:60px;
+    text-align:center;
+}
+.circle > .paragraph > p {
+    margin:10px;
+    font-size: 20px;
+}
+
+.circle > .paragraph > p > a {
+    color:white;
+}
+
+
