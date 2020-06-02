@@ -4,9 +4,7 @@
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Node: Workshop 1</h1>
-  </header>
+  <%- include('../partials/header') %>
   <div class="main">
     <h2>Part 1</h2>
     <div class="content">
@@ -14,6 +12,19 @@
       <div class="box answer">
         <h3>Answer</h3>
         <!-- render answer here -->
+        <div class="names">
+          <h3>Top 5 girls names in the England and Wales</h3>
+          <ol style="list-style-type: decimal; margin-left: 15px;">
+            <% popularGirlNames.forEach(item => { %>
+            <li><%= item %></li>
+            <% }) %>
+          </ol>
+          <ol>
+            <% popularGirlNames.forEach((item, i) => { %>
+            <li><%= i + 1 %>. <%= item %></li>
+            <% }) %>
+          </ol>
+        </div>
       </div>
     </div>
   </div>

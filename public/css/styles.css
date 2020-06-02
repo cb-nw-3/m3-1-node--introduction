@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-  
+
 header {
     flex: 0 0 60px;
     display: flex;
@@ -16,7 +16,7 @@ header {
     border-bottom: 1px solid #808080;
     padding: 0 24px;
 }
-  
+
 .main {
     flex: 1 0 auto;
     padding: 24px;
@@ -42,6 +42,47 @@ ol, ul { margin-bottom: 1em; }
     border: 1px solid #cacaca;
     margin: 12px 32px 6px 0;
     padding: 12px 14px;
+}
+
+.error404 {
+    margin: 100px auto;
+    color: #fff;
+    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+    font-size: xx-large;
+}
+
+.error40404 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1585989933313-e96cd4751c83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 600px;
+    grid-gap: 3px;
+    margin: 3px;
+}
+
+.navFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #808080;
+    color: white;
+    text-decoration: none;
+    transition: all 0.1s;
+}
+.navFlex:hover {
+    background: #757575;
 }
 
 @media screen and (min-width: 900px) {
