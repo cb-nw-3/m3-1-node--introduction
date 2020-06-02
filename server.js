@@ -12,8 +12,9 @@ const PORT = 8000;
 const q6 = (req, res) => res.render('pages/question6');
 const q7 = (req, res) => res.render('pages/question7');
 const q8 = (req, res) => res.render('pages/question8');
-const q9 = (req, res) => res.render('pages/question9');
+const q9 = (req, res) => res.render('./partials/homepage');
 const q10 = (req, res) => res.render('pages/question10');
+const error404 = (req, res) => res.render('./partials/fourOhFour');
 
 express()
     // This will give us will log more info to the console. see https://www.npmjs.com/package/morgan
@@ -42,10 +43,7 @@ express()
 
     // this is our catch all endpoint. If a user navigates to any endpoint that is not
     // defined above, they get to see our 404 page.
-    .get('*', (req, res) => {
-        res.status(404);
-        res.send('404... This is not the page you are looking for.');
-    })
+    .get('*', error404)
 
     // Node spins up our server and sets it to listen on the PORT we defined above.
     .listen(PORT, () => console.log(`Listening on port ${PORT}`));
