@@ -42,6 +42,8 @@ img {
     padding: 10px;
     border: 1px solid #73bf87;
     border-radius: 4px;
+    width: 300px;
+    height: auto;
 }
 
 #container {
