@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+<%- include('../partials/head') %>
 <body>
-  <header>
-    <h1>Node: Workshop 1</h1>
-  </header>
+  <%- include('../partials/header') %>
   <div class="main">
     <h2>Part 1</h2>
     <div class="content">
@@ -16,10 +10,15 @@
         <!-- render answer here -->
         <!-- Notice that the commenting inside the ejs brackets is JS. -->
 
-        <p><%- // sentence %></p>
-        <p><%= // sentence %></p>
+        <p><%- sentence %><!--- Outputs the unescaped value into the template --></p>
+        <p><%= sentence %><!--- Outputs the value into the template (HTML escaped) --></p>
+        <p><% console.log('Log in the server side after page reload') %><!--- 'Scriptlet' tag, for control-flow, no output --></p> 
 
         <!-- Keep that in mind for later. Everything between those brackets IS JavaScript. -->
+        <nav class='next-page'>
+          <a href='/question1'>Previous</a>
+          <a href='/question3'>Next</a>
+        </nav>
       </div>
     </div>
   </div>

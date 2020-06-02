@@ -34,6 +34,8 @@ We **compile** a template to plain HTML.
 ---
 
 ```js
+const ejs = require('ejs');
+
 let template = `
 <ol>
   <% friends.forEach((name) => { %>
@@ -42,9 +44,11 @@ let template = `
 </ol>
 `;
 
-let data = ['Anjula', 'Bouchard', 'Chad'];
+let data = {
+  friends: ['Anjula', 'Bouchard', 'Chad']
+};
 
-ejs.render(str, data);
+ejs.render(template, data);
 // => Rendered HTML string
 ```
 

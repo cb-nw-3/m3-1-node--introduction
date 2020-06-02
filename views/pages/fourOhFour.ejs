@@ -1,0 +1,21 @@
+<%- include('../partials/head') %>
+<body>
+  <%- include('../partials/header') %>
+  <div class="four-oh-four">
+    <div class='center-content'>
+      <h2>Oh no!!!! You broke the internet :-(</h2>
+      <p>Don't worry, you'll be redirected in:</p>
+      <div id="countdown">10</div>
+    </div>
+  </div>
+  <script>
+    setInterval(function() {
+      let countdown = document.querySelector("#countdown");
+      let time = countdown.textContent * 1 - 1;
+      countdown.textContent = time;
+      if (time <= 0) {
+        window.location.replace("http://localhost:8000/");
+      }
+    }, 1000);
+  </script>
+</body>
