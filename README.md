@@ -10,7 +10,7 @@ This is where things start to get a little more complicated, but a heck of a lot
 2. Open a terminal window and type `yarn install`
 3. Start up the server by typing `yarn dev`
 
-Your node application is now running at http://localhost:8000
+Your node application is now running at https://localhost:8000
 
 ### ⚠️ Live Server, NO MORE! ⚠️
 
