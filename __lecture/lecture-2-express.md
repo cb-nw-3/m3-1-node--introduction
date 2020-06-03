@@ -24,6 +24,8 @@ app.get('/', (req, res) => {
 });
 
 app.listen(4000);
+
+//This is for the Node process does not end
 ```
 
 ---

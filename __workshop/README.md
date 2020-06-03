@@ -8,9 +8,9 @@ Follow the instructions in the README file that is located at the root of the pr
 
 ### Where are the questions?
 
-Questions can be found at the `/question<#>` endpoints in the browser. 
+Questions can be found at the `/question<#>` endpoints in the browser.
 
-e.g. Question 1 is located at `https://localhost:8000/question1`
+e.g. Question 1 is located at `http://localhost:8000/question1`
 
 ### How do I answer the questions?
 
