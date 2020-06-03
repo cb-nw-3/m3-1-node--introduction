@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+<%- include('../partials/intro') %>
 <body>
-  <header>
-    <h1>Node: Workshop 1</h1>
-  </header>
+  <%- include('../partials/header') %>
   <div class="main">
     <h2>Part 1</h2>
     <div class="content">
@@ -17,5 +11,12 @@
         sdsdadadadsads
       </div>
     </div>
+    <a href="/">&laquo; Previous;</a>
+    <a
+      href="/"
+      style="position: absolute; left: 50%; transform: translate(-50%);"
+      >Homepage</a
+    >
+    <a href="/question2" style="float: right;">Next &raquo;</a>
   </div>
 </body>
