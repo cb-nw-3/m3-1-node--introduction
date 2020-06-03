@@ -3,6 +3,7 @@
   <title>Node: Workshop 1</title>
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
   <header>
     <h1>Node: Workshop 1</h1>
@@ -10,11 +11,22 @@
   <div class="main">
     <h2>Part 1</h2>
     <div class="content">
+      <%- include('../partials/head') %>
       <%- include('../partials/questions/3') %>
       <div class="box answer">
-        <h3>Answer</h3>
+        <h3>Answer</h3> 
         <!-- render answer here -->
+        <p>Name: <%= homer.name %></p>
+                <p>DOB: <%= homer.dob %></p>
+                <p>Profession: <%= homer.profession %></p>
+                <p>Favorite Food: <%= homer.favoriteFood %></p>
+                <p>Favorite Beverage: <%= homer.favoriteBeverage %></p>
+                <img src='<%= homer.imageUrl %>' alt='<%= homer.name %>' style='max-height:140px;' />
       </div>
     </div>
   </div>
+  <div>
+    <a href='/question2'>Previous</a>
+    <a href='/question4'>Next</a>
+    </div>
 </body>
