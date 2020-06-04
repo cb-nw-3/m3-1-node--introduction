@@ -49,7 +49,8 @@ express() // backend server
   // defined above, they get to see our 404 page.
   .get("*", (req, res) => {
     res.status(404);
-    res.send("404... This is not the page you are looking for.");
+    //res.send("404... This is not the page you are looking for.");
+    res.render("pages/fourOhFour");
   })
 
   // Node spins up our server and sets it to listen on the PORT we defined above.
