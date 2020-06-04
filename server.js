@@ -9,6 +9,7 @@ const exercisesP1 = require('./__workshop/exercisesP1');
 
 const PORT = 8000;
 
+const home =(req, res) => res.render('pages/homepage');
 const q6 = (req, res) => res.render('pages/question6');
 const q7 = (req, res) => res.render('pages/question7');
 const q8 = (req, res) => res.render('pages/question8');
@@ -37,14 +38,14 @@ express()
     
     // this serves up the homepage
     .get('/', (req, res) => {
-        res.send('This is the homepage... it\'s empty :(');
+        res.render('pages/homepage.ejs');
     })
 
     // this is our catch all endpoint. If a user navigates to any endpoint that is not
     // defined above, they get to see our 404 page.
     .get('*', (req, res) => {
         res.status(404);
-        res.send('404... This is not the page you are looking for.');
+        res.render('pages/lostTest.ejs');
     })
 
     // Node spins up our server and sets it to listen on the PORT we defined above.

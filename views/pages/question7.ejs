@@ -1,21 +1,26 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+<%- include(`../partials/head.ejs`, {}) %>
 <body>
-  <header>
-    <h1>Node: Workshop 1</h1>
-  </header>
-  <div class="main">
-    <h2>Part 2</h2>
-    <div class="content">
-      <%- include('../partials/questions/7') %>
-      <div class="box answer">
-        <h3>Answer</h3>
-        <!-- render answer here -->
-        <p>No answer required here...</p>
-      </div>
-    </div>
-  </div>
+	<%- include(`../partials/header.ejs`, {}) %>
+	<div class="main">
+		<h2>Part 2</h2>
+		<div class="content">
+			<%- include('../partials/questions/7') %>
+			<div class="box answer">
+				<h3>Answer</h3>
+				<!-- render answer here -->
+				<p>No answer required here...</p>
+			</div>
+		</div>
+	</div>
+	<div class="btnCont">
+		<button class="previousQuestion" onclick="location.href='question6'">
+			Previous Question
+		</button>
+		<button class="homeClick" onclick="location.href='../'">
+			Home
+		</button>
+		<button class="nextQuestion" onclick="location.href='question8'"">
+			Next Question
+		</button>
+	</div>
 </body>

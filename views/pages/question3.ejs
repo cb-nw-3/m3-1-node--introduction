@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <head>
-  <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
+	<title>Node: Workshop 1</title>
+	<link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Node: Workshop 1</h1>
-  </header>
-  <div class="main">
-    <h2>Part 1</h2>
-    <div class="content">
-      <%- include('../partials/questions/3') %>
-      <div class="box answer">
-        <h3>Answer</h3>
-        <!-- render answer here -->
-      </div>
-    </div>
-  </div>
+	<header>
+		<h1>Node: Workshop 1</h1>
+	</header>
+	<div class="main">
+		<h2>Part 1</h2>
+		<div class="content">
+			<%- include('../partials/questions/3') %>
+			<div class="box answer">
+				<h3>Answer</h3>
+				<!-- render answer here -->
+				<%- `<img src=" ${homer.imageUrl}" />` %> <%-
+				Object.keys(homer).slice(1).map((key) => `
+				<p>${homer[key]}</p>
+				` ).join('') %>
+			</div>
+		</div>
+	</div>
+	<div class="btnCont">
+		<button class="previousQuestion" onclick="location.href='question2'">
+			Previous Question
+		</button>
+		<button class="homeClick" onclick="location.href='../'">
+			Home
+		</button>
+		<button class="nextQuestion" onclick="location.href='question4'"">
+			Next Question
+		</button>
+	</div>
 </body>

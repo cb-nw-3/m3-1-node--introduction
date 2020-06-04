@@ -1,53 +1,116 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab:300&display=swap');
-@import 'css-reset.css';
-@import 'typography.css';
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab:300&display=swap");
+@import "css-reset.css";
+@import "typography.css";
 
 body {
-    background: #fafafa;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-  
-header {
-    flex: 0 0 60px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #808080;
-    padding: 0 24px;
-}
-  
-.main {
-    flex: 1 0 auto;
-    padding: 24px;
+	background: #fafafa;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
-ol, ul { margin-bottom: 1em; }
+header {
+	flex: 0 0 60px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #808080;
+	padding: 0 24px;
+}
+
+.main {
+	flex: 1 0 auto;
+	padding: 24px;
+}
+
+ol,
+ul {
+	margin-bottom: 1em;
+}
 
 .content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 24px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 24px;
 }
 
 .box {
-    border: 1px solid #707070;
-    flex: 0 0 49%;
-    margin-bottom: 24px;
-    min-height: 200px;
-    padding: 18px;
+	border: 1px solid #707070;
+	flex: 0 0 49%;
+	margin-bottom: 24px;
+	min-height: 200px;
+	padding: 18px;
 }
 
 .question .sample {
-    border: 1px solid #cacaca;
-    margin: 12px 32px 6px 0;
-    padding: 12px 14px;
+	border: 1px solid #cacaca;
+	margin: 12px 32px 6px 0;
+	padding: 12px 14px;
 }
 
 @media screen and (min-width: 900px) {
-    .content {
-        flex-direction: row;
-        justify-content: space-between;
-        min-height: 500px;
-    }
+	.content {
+		flex-direction: row;
+		justify-content: space-between;
+		min-height: 500px;
+	}
+}
+
+.btnCont {
+	display: flex;
+	padding-bottom: 75px;
+	justify-content: space-around;
+}
+
+.previousQuestion,
+.nextQuestion {
+	font-size: 25px;
+	border-radius: 10px;
+	padding: 10px 15px 10px 15px;
+	color: ghostwhite;
+	background-color: grey;
+}
+
+.previousQuestion:hover,
+.nextQuestion:hover {
+	color: grey;
+	background-color: ghostwhite;
+	cursor: grab;
+
+}
+
+.homeClick {
+	border-radius: 5px;
+	color: ghostwhite;
+	background-color: black;
+	font-size: 20px;
+	width: 75px;
+}
+
+.homeClick:hover {
+	color: black;
+	background-color: ghostwhite;
+	cursor: grab;
+}
+
+.questionLinks {
+	padding: 15px;
+	margin-top: 75px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 25px;
+	color: ghostwhite;
+
+}
+
+.questionLinks button {
+	margin: 5px;
+	width: 175px;
+	background-color: rgb(0, 80, 252);
+	border-radius: 5px;
+}
+
+.questionLinks button:hover {
+	background-color: black;
 }

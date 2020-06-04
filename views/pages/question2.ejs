@@ -16,11 +16,22 @@
         <!-- render answer here -->
         <!-- Notice that the commenting inside the ejs brackets is JS. -->
 
-        <p><%- // sentence %></p>
-        <p><%= // sentence %></p>
+        <p><%-  sentence %></p>
+        <p><%=  sentence %></p>
 
         <!-- Keep that in mind for later. Everything between those brackets IS JavaScript. -->
       </div>
     </div>
+  </div>
+  <div class="btnCont">
+    <button class="previousQuestion" onclick="location.href='question1'">
+      Previous Question
+    </button>
+    <button class="homeClick" onclick="location.href='../'">
+      Home
+    </button>
+    <button class="nextQuestion" onclick="location.href='question3'"">
+      Next Question
+    </button>
   </div>
 </body>
