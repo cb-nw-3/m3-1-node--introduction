@@ -67,6 +67,36 @@ li {
   list-style-type: disc;
 }
 
+.container {
+  display: flex;
+  flex: 1;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  border: 5px solid black;
+  width: 80%;
+  top: 40%;
+}
+
+.container > h2,
+p {
+  margin-top: 50px;
+}
+
+#imgDisplay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#imgDisplay img {
+  width: 80%;
+  height: 70vh;
+  margin: 20px auto;
+  justify-content: center;
+}
+
 @media screen and (min-width: 900px) {
   .content {
     flex-direction: row;
