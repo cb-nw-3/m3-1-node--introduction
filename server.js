@@ -41,7 +41,8 @@ express() // backend server
 
   // this serves up the homepage
   .get("/", (req, res) => {
-    res.send("This is the homepage... it's empty :(");
+    //res.send("This is the homepage... it's empty :(");
+    res.render("pages/homepage");
   })
 
   // this is our catch all endpoint. If a user navigates to any endpoint that is not
