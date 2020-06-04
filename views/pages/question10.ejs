@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <title>Node: Workshop 1</title>
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <header>
@@ -14,7 +14,10 @@
       <div class="box answer">
         <h3>Answer</h3>
         <!-- render answer here -->
-        <p>No answer required here...</p>
+        <p>
+          .get('*', (req, res) => { res.status(404);
+          res.render('./pages/fourOhFour');
+        </p>
       </div>
     </div>
   </div>
