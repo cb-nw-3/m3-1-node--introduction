@@ -1,0 +1,14 @@
+<%- include("../partials/questions/head.ejs") %>
+<body>
+  <%- include("../partials/questions/header.ejs") %> <% let numQuestions = 10 %>
+  <div class="workshopContent">
+    <h3 class="description">
+      Click on the link to redirect you to the Question page
+    </h3>
+    <ul>
+      <% for(let i=1; i<=10;i++) {%>
+      <li><a href="/question<%=i%>">Question <%=i%></a></li>
+      <% }; %>
+    </ul>
+  </div>
+</body>
