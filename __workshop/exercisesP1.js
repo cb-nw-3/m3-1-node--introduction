@@ -1,3 +1,21 @@
+// test :-)
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => {
+  res.send('Hello');
+});
+
+app.get('/hello/letshavefun', (req, res) => {
+  // console.log(req)
+  console.log(req.query)
+  res.send('Hello, this is soooo cool :-)');
+  // http://localhost:4000/hello/letshavefun?test=whatever
+});
+
+app.listen(4000);
+
+// -----------------------------------------------
+
 // Getting familiar with EJS and the project folder/file structure.
 
 // Question 1
@@ -6,6 +24,7 @@ const q1 = (req, res) => {
   // there is nothing to do here for this question
 
   res.render('pages/question1');
+  // http://localhost:8000/question1
 };
 // -----------------------------------------------
 
@@ -15,7 +34,8 @@ const q2 = (req, res) => {
   // pass this variable to the ejs file and render it in the answer box.
   const sentence = '<p>This is the way.</p>';
 
-  res.render('pages/question2', {});
+  res.render('pages/question2', {sentence: sentence});
+  // http://localhost:8000/question2
 };
 // -----------------------------------------------
 
@@ -33,7 +53,8 @@ const q3 = (req, res) => {
     favoriteBeverage: 'Duff Beer',
   };
 
-  res.render('pages/question3');
+  res.render('pages/question3', { homer: homer });
+  // http://localhost:8000/question3
 };
 // -----------------------------------------------
 
@@ -41,8 +62,9 @@ const q3 = (req, res) => {
 // -----------------------------------------------
 const q4 = (req, res) => {
   const popularGirlNames = ['Olivia', 'Ruby', 'Emily', 'Grace', 'Jessica'];
+  const firstThree = popularGirlNames.splice(0,3)
 
-  res.render('pages/question4');
+  res.render('pages/question4', { firstThree: firstThree });
 };
 // -----------------------------------------------
 
@@ -51,7 +73,7 @@ const q4 = (req, res) => {
 const q5 = (req, res) => {
   const popularGirlNames = ['Olivia', 'Ruby', 'Emily', 'Grace', 'Jessica'];
 
-  res.render('pages/question5');
+  res.render('pages/question5', { popularGirlNames: popularGirlNames});
 };
 // -----------------------------------------------
 
