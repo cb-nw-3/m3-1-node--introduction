@@ -13,8 +13,21 @@
       <%- include('../partials/questions/3') %>
       <div class="box answer">
         <h3>Answer</h3>
-        <!-- render answer here -->
+        <img src="<%= homer.imageUrl %>" />
+        <ul>
+          <li>Name: <%= homer.name %></li>
+          <li>Date of Birth: <%=homer.dob %></li>
+          <li>Profession: <%=homer.profession %></li>
+          <li>Favourite Food: <%=homer.favoriteFood %></li>
+          <li>Favourite Beverage: <%=homer.favoriteBeverage %></li>
+        </ul>
       </div>
     </div>
+  </div>
+  <div class="nav-div">
+    <nav id="nav">
+      <a href="/question2">Previous</a>
+      <a href="/question4">Next</a>
+    </nav>
   </div>
 </body>
