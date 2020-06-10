@@ -14,6 +14,14 @@
       <div class="box answer">
         <h3>Answer</h3>
         <!-- render answer here -->
+        <ol>
+          <% popularGirlNames.forEach(name => { %>
+            <!-- These list items are inside an ordered list. Why isn't the number showing? -->
+            <li><%-(popularGirlNames.indexOf(name) + 1) + ". " + name%></li>
+          <% }); %>
+        </ol>
+        <a href='/question4'>Previous page</a>
+        <a href='/question6'>Next page</a>
       </div>
     </div>
   </div>
